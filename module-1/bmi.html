@@ -1,0 +1,151 @@
+<!-- reference took help from google -->
+<html>
+    <head>
+        <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+        <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+        <script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+        <script type="text/babel">
+        
+
+        
+            
+            class Form extends React.Component {
+                render() {
+                    return(
+                        <div> 
+                            <h2>Calculator</h2>
+                            <form id="num" >
+                                <label for="number">Number1</label>
+                                <input type="number" id="num1" name="num1" />
+                                <p>  </p>
+                                
+                                <label for="number">Number2</label>
+                                <input type="number" id="num2" name="num2" />
+                                <p>  </p>
+                                <div id="cli"> <input type="button" value="+"/>
+                                    {"    "}
+                                    <input type="button" value="-"/>
+                                    <input type="button" value="*"/>
+                                    <input type="button" value="/"/></div>
+                                    <p>  </p>
+                                <input onclick={this.result} type="button" value="Result"/>
+                                {"                        "}{"       "}
+                                
+                               
+                                
+                            </form> 
+
+            
+            </div>
+                    );
+                }
+                result=()=>{
+                    // document.getElementById("fname").value
+                    
+                    const num1 =parseInt(document.getElementById("num1").value)
+                    const num2 =parseInt(document.getElementById("num2").value)
+                    const n= num1+num2
+                    // const ab="+"
+
+                   document.getElementById("abhi").innerHTML= n + " ";
+
+
+                }
+
+                
+            }
+            
+
+
+            
+            
+            ReactDOM.render(<Form />, document.getElementById("root"));
+
+            class App extends React.Component {
+                render() {
+                    return(
+                        <div> 
+                            <h2 id="bmi"> BMI Calculator</h2>
+                            <form id="num1" >
+                                <label for="number">Weight </label>
+                                <input type="number" placeholder="kgs" id="num1" name="num1" />
+                                <label> kg </label>
+                                <p>  </p>
+                                
+                                <label for="number">Height</label>
+                                <input type="number" id="num2" name="num2" />
+                                <label> inc </label>
+                                <p>  </p>
+                                <label for="number">  <p> </p> </label>
+                                <input type="number" id="num2" name="num2" />
+                                <label> ft </label>
+                                
+                                    <p>  </p>
+                                <input onclick={this.result} type="button" value="Result"/>
+                                {"                        "}{"       "}
+                                
+                               
+                                
+                            </form> 
+
+            
+            </div>
+                    );
+                }
+                result=()=>{
+                    // document.getElementById("fname").value
+                    
+                    const num1 =parseInt(document.getElementById("num1").value)
+                    const num2 =parseInt(document.getElementById("num2").value)
+                    const n= num1+num2
+                    // const ab="+"
+
+                   document.getElementById("abhi").innerHTML= n + " ";
+
+
+                }
+
+                
+            }
+            
+
+
+            
+            
+            ReactDOM.render(<App />, document.getElementById("app"));
+
+        
+        
+        
+
+        </script>
+    </head>
+    <style>
+        #cli{
+            margin-right:10px;
+            position: absolute;
+            left: 150px;
+
+        }
+        /* #bmi{
+            position: absolute;
+            left: 450px;
+        } */
+        /* #num1{
+            position: absolute;
+            left: 550px;
+        } */
+        </style>
+    <body>
+        <p id="root"></p>
+        <p id="app"></p>
+        <p id="abhi"> </p>
+
+
+    </body>
+
+
+</html>
+
+
