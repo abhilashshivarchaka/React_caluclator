@@ -1,0 +1,238 @@
+/* reference:took help from friend and google */
+body { margin: 0; padding: 0; }
+h1,h2,h3,h4,h5,h6,p { margin: 0; }
+.body{
+  background-color: aliceblue;
+  margin-bottom: 15px;
+  position: relative;
+  left: 50px;
+  width: 34%;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 50px;
+    border: 2px solid rgb(64, 114, 163);
+    box-shadow: 5px 5px rgb(108, 73, 235);
+    position: absolute;
+    left: 550px;
+  padding: 50px;
+}
+.content-div{
+  width: 90%;
+  margin: 0 auto;
+  padding-top: 30px;
+  border-radius: 10px;
+  position: relative;
+  background-color: #fff;
+}
+.body1{
+  margin-bottom: 5px;
+      text-align: center;
+      font-size: 36px;
+      font-weight: 800;
+      font: 3em sans-serif;
+}
+.body1{
+  margin-bottom: 5px;
+      text-align: center;
+      font-size: 30px;
+      font-weight: 800;
+      font: 2em sans-serif;
+}
+.content-div1 {
+  display: block;
+  padding-inline-start: 2px;
+  padding-inline-end: 2px;
+  border-width: initial;
+  border-style: none;
+  border-color: initial;
+  border-image: initial;
+}
+/* section#entry-page {
+  display: grid;
+  grid-template-columns: 1fr minmax(200px,400px) 1fr;
+  grid-template-rows: 1fr minmax(auto,1fr) 1fr;
+  grid-gap: 10px;
+  width: 100%;
+  height: 100vh;
+  background: white;
+  background-size: 400% 400%;
+  animation: Gradient 15s ease infinite;
+  box-sizing: border-box;
+  form {
+    grid-column: 2;
+    grid-row: 2;
+    display: grid;
+    grid-gap: 10px;
+    margin: auto 0;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    box-shadow: 0 32px 64px rgba(0,0,0,0.2);
+    h2 {
+      margin-bottom: 5px;
+      text-align: center;
+      text-shadow: 0 4px 16px #fff;
+      font-size: 30px;
+      font-weight: 100;
+    }
+    fieldset {
+      margin: 0;
+      background-color: #fff;
+      border: none;
+      border-radius: 5px;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+    } */
+    .body{
+      background-color: aliceblue;
+      margin-bottom: 15px;
+      position: relative;
+      left: 50px;
+      width: 34%;
+        height: 600px;
+        margin: 0 auto;
+        margin-top: 50px;
+        border: 2px solid lightslategrey;
+        box-shadow: 5px 5px rgb(145, 141, 141);
+        position: absolute;
+        left: 550px;
+      padding: 50px;
+    }
+    .content-div{
+      width: 90%;
+      margin: 0 auto;
+      padding-top: 30px;
+      border-radius: 10px;
+      position: relative;
+      background-color: #fff;
+      
+    }
+    .body1{
+      margin-bottom: 5px;
+          text-align: center;
+          font-size: 36px;
+          font-weight: 800;
+          font: 3em sans-serif;
+          
+    }
+    .body1{
+      margin-bottom: 5px;
+          text-align: center;
+          font-size: 30px;
+          font-weight: 800;
+          font: 2em sans-serif;
+          
+    }
+    .content-div1 {
+      display: block;
+      padding-inline-start: 2px;
+      padding-inline-end: 2px;
+      border-width: initial;
+      border-style: none;
+      border-color: initial;
+      border-image: initial;
+    }
+    
+    button {
+          padding: 10px;
+          border:1px solid rgba(0,0,0,0);
+          border-radius: 5px;
+          background: #fff;
+          box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+        }
+    
+      legend {
+        padding: 5px;
+        background-color: #fff;
+        border-radius: 5px;
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+        li {
+          display: grid;
+          align-items: center;
+          margin: 10px;
+        }
+          a {
+            color: #02c;
+          }
+          em {
+            grid-column: span 2;
+            text-align: center;
+            padding: 5px;
+          }
+          label {
+            text-align: left;
+            padding-bottom: 2px;
+          }
+          input {
+            padding: 5px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+          }
+            :hover {
+              border: 1px solid #aaf;
+            }
+    /* button {
+      padding: 10px;
+      border:1px solid rgba(0,0,0,0);
+      border-radius: 5px;
+      background: #fff;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+      &:hover {
+        background-color: #eef;
+        border: 1px solid #aaf; */
+      /* } */
+    /* } */
+  /* } */
+/* } */
+@media only screen and (min-width: 420px) {
+  form {
+    h2 {
+      font-size: 40px;
+    }
+    fieldset {
+      ul {
+        li {
+          grid-template-columns: 100px 1fr;
+          label {
+            padding-right: 10px;
+            padding-bottom: 0;
+            text-align: right !important;
+          }
+        }
+      }
+    }
+  }
+}
+#welcome{
+  position: absolute;
+  text-align: center;
+  left: 560px;
+  top: 250px;
+}
+#result{
+  position: absolute;
+  text-align: center;
+  left:550px;
+}
+#sum{
+  color:white;
+  background-color:maroon
+}
+#log{
+  color: white;
+  background-color: maroon;
+}
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
