@@ -1,0 +1,123 @@
+<!-- took help from google and friend -->
+<html>
+<head>
+    <link rel="stylesheet" href = "style.css">
+	
+<script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+<script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+<script src="https://unpkg.com/babel-standalone@6/babel.min.js"></script>
+
+<style>
+	input{
+	 padding:5px;
+	 margin:5px;
+	 
+	}
+</style>
+	
+</head>
+<body>
+	<div id="showInput"></div>
+	<div id="root"></div>
+	<div id="showInput1"></div>
+	<div id="root1"></div>
+</body>
+
+</html>
+
+
+<script type="text/babel">
+
+	class Input extends React.Component {
+		render(){
+			return (<div class = "input-control">
+				<h1>Simple Calculator</h1>
+				<label for = "num1">Number 1: <input type = "text" id = "num1" placeholder = "first number" autofocus/></label><br/>
+				<label for = "num2">Number 2: <input type = "text" id = "num2" placeholder = "second number" autofocus/></label><br/><br/>
+				<label for="method_add"><input type="radio" name="method" id="method_add" value="add" checked/>Add</label>
+				<label for="method_sub"><input type="radio" name="method" id="method_sub" value="sub" checked/>Subtract</label>
+				<label for="method_mul"><input type="radio" name="method" id="method_mul" value="mul" checked/>Multiply</label>
+				<label for="method_div"><input type="radio" name="method" id="method_div" value="div" checked/>Divide</label><br/><br/>
+				<button id="calculate">Calculate</button><br/><br/><br/>
+				<p class = "answer">0</p>
+				</div>
+				
+				)
+		}	
+	}
+
+	ReactDOM.render(<Input />, document.getElementById("root"));
+
+	var btn = document.querySelector('#calculate');
+btn.addEventListener ('click', function () {
+    var num1 = Number ( document.querySelector('#num1').value ),
+            num2 = Number ( document.querySelector('#num2').value ),
+            // The Element to show result in
+            rlt = document.querySelector('p.answer');
+        var method = document.querySelector('input[name="method"]:checked').value;
+    var answer = 0;
+    if ( 'add' === method ) {
+        answer = num1 + num2;
+    } else if ( 'sub' === method ) {
+        answer = num1 - num2;
+    } else if ( 'mul' === method ) {
+        answer = num1 * num2;
+    } else if ( 'div' === method ) {
+        answer = num1 / num2;
+    }
+    // Set content of HTML element.
+    rlt.innerHTML = answer;
+});
+
+
+	class Input1 extends React.Component {
+		render(){
+			return (<div class = "input-control1">
+				<h1>BMI Calculator</h1>
+				<label1 for = "num11">Weight: kgs <input  type = "text" id = "num11" placeholder = "in kgs" autofocus/></label1><br/>
+				<label1 for = "num21">Height: inch/ft<input type = "text" id = "num21" placeholder = "in feet" autofocus/></label1><br/><br/>
+				<button id="calculate1">Calculate</button><br/><br/><br/>
+				<p class = "answer1">0</p>
+				</div>				
+				)
+		}	
+	}
+
+	ReactDOM.render(<Input1 />, document.getElementById("root1"));
+
+	var btn = document.querySelector('#calculate1');
+btn.addEventListener ('click', function () {
+    var num1 = Number ( document.querySelector('#num11').value ),
+            num2 = Number ( document.querySelector('#num21').value ),
+            // The Element to show result in
+            rlt = document.querySelector('p.answer1');
+    var answer = 0;
+    answer = num1/((num2/3.281)*(num2/3.281));
+    if(answer < 16){
+			rlt.innerHTML = "BMI: "+answer+"\n" +"you are underweighted";
+	}
+	else if(answer < 25){
+		rlt.innerHTML = "BMI: "+answer+" and you are normal";
+
+	}
+	else if(answer < 30){
+		rlt.innerHTML = "BMI: "+answer+" and you are overweighted";
+
+	}
+	else{
+		rlt.innerHTML = "BMI: "+answer+" and you are obese";
+	}
+
+
+    // Set content of HTML element.
+    
+
+    
+    // rlt.innerHTML = answer;
+
+});
+
+
+		
+	
+</script>

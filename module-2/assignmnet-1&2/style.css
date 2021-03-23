@@ -1,0 +1,104 @@
+.input-control {
+    background-color: aliceblue;
+    margin-bottom: 15px;
+    position: relative;
+    left: 50px;
+    width: 34%;
+      height: 500px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border: 2px solid lightslategrey;
+      box-shadow: 5px 5px rgb(145, 141, 141);
+      position: absolute;
+      left: 850px;
+    padding: 50px;
+    }
+    
+    .input-control.button, .input-control.controls {
+    margin-top: 25px;
+    margin-left: 80px;
+    }
+    
+    .input-control1 {
+      background-color: aliceblue;
+      margin-bottom: 15px;
+      position: relative;
+      left: 50px;
+      width: 34%;
+      height: 500px;
+      margin: 0 auto;
+      margin-top: 50px;
+      border: 2px solid lightslategrey;
+      box-shadow: 5px 5px rgb(145, 141, 141);
+      position: absolute;
+      left: 50px;
+      padding: 50px;
+      }
+      
+      .input-control.button, .input-control.controls {
+        margin-top: 25px;
+        margin-left: 80px;
+      }
+  ​
+      #calculate {
+        position: relative;
+        top: 35px;
+        left: 150px;
+        width: 180px;
+        height: 40px;
+        border-radius: 8px;
+        background-color: greenyellow;
+        font-weight: bold;
+        cursor: pointer;
+    }
+    
+    #calculate:hover{
+        width: 180px;
+        height: 40px;
+        font-weight: bold;
+        /* background-color:#28a745; */
+        cursor: pointer;
+    }
+  ​
+    #calculate1 {
+      position: relative;
+      top: 35px;
+      left: 165px;
+      width: 180px;
+      height: 40px;
+      border-radius: 8px;
+      background-color: greenyellow;
+      font-weight: bold;
+      cursor: pointer;
+  }
+  ​
+  #calculate1:hover{
+      width: 180px;
+      height: 40px;
+      font-weight: bold;
+      /* background-color:#28a745; */
+      cursor: pointer;
+  }
+  ​
+  label{
+    font-size: 20px;
+    position: relative;
+    left: 50px
+  }
+  ​
+  label1{
+    font-size: 22px;
+    position: relative;
+    left: 75px
+  }
+  ​
+  h1{
+    text-align: center;
+  }
+  ​
+  p{
+    font-size: 30px;
+    /* color: green; */
+    text-align: center;
+  ​
+  }
